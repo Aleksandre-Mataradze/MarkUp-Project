@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "avenir";
+  src: url(../fonts/avenir-next/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+  font-family: "paletino";
+  src: url(../fonts/paletino/pala.regular.ttf);
+}
+@font-face {
+  font-family: "paletinob";
+  src: url(../fonts/paletino/pala.bold.ttf);
+}
+@font-face {
+  font-family: HelvetiicaNeueLight;
+  src: url(../fonts/helvetica-neue/HelveticaNeueLight.otf);
+}/*# sourceMappingURL=config.css.map */

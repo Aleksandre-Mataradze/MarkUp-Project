@@ -4,38 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <div class="header-container-main">
-            <div class="header-container-pages">
-                <nav>
-                    <div>
-                        <p>Home</p>
-                    </div>
-                    <div>
-                        <p>About</p>
-                    </div>
-                    <div>
-                        <p>Lifestyle</p>
-                    </div>
-                    <div>
-                        <p>Family</p>
-                    </div>
-                    <div>
-                        <p>Food</p>
-                    </div>
-                </nav>
-            </div>
-            <div class="header-container-social-links">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="header-container-main-margin">
+                <div class="header-container-pages">
+                    <nav style="display: flex;">
+                        <div class="page-box">
+                            <p>Home</p>
+                        </div>
+                        <div class="page-box">
+                            <p>About</p>
+                        </div>
+                        <div class="page-box">
+                            <p>Lifestyle</p>
+                        </div>
+                        <div class="page-box">
+                            <p>Family</p>
+                        </div>
+                        <div class="page-box">
+                            <p>Food</p>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header-container-social-links">
+                    <img src="../img/facebook.png" alt="facebook">
+                    <img src="../img/youtube.png" alt="youtube">
+                    <img src="../img/instagram.png" alt="instagram">
+                    <img src="../img/pinterest.png" alt="pinterest">
+                </div>
             </div>
         </div>
+        <div class="lets-chat">
+            <div class="lets-chat-txtbox">
+                <i class="fa-solid fa-comment"></i>
+                <h2>Let's Chat!</h2>
+            </div>
+        </div>
+        <div class="scroll-up-container">
+            <img src="../img/scroll-up.jpg" alt="scroll-up" id="scroll-up-before">
+            <img src="../img/scroll-up-bright.png" alt="scroll-up-bright" id="scroll-up-after">
+        </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div class="main-container-header">
+            <span style="top: 68px;" id="main-container-header-top">A LIFESTYLE BLOG</span>
+            <span style="bottom: 40px;" id="main-container-header-bottom">Lovely Little Things</span>
+        </div>
+        <img src="../img/lovely-little-things.jpg" alt="lovely little things" id="lovely-little-things">
+        <section>
+            <div class="section-categories">
+                <div class="section-categories-divs">
+                    <img src="../img/lifestyle.jpeg" alt="lifestyle">
+                    <div class="lifestyle click-to-edit">
+                        <a href="">Lifestyle</a>
+                        <span>Click here to edit me</span>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="section-categories-divs">
+                    <img src="../img/family.jpeg" alt="family" id="img-family-rotation"> <!-- img rotated 180deg -->
+                    <div class="family click-to-edit">
+                        <a href="">Family</a>
+                        <span>Click here to edit me</span>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="section-categories-divs">
+                    <img src="../img/food.jpeg" alt="food">
+                    <div class="food click-to-edit">
+                        <a href="">Food</a>
+                        <span>Click here to edit me</span>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="blogs">
+            <div class="blog-post">
+                <div class="blog-post-columned">
+                    <img src="../img/tomatoes.jpg" alt="tomatoes" id="tomatoes"> <!-- img can be changed by image source edit -->
+                    <div class="heather"> <!-- blog post aside bar -->
+                        <img src="../img/heather.jpg" alt="heather"> 
+                        <div class="heather-text">
+                            <a href="">
+                                <p id="heather-header">ABOUT HEATHER</p>
+                            </a>
+                            <a href="">
+                                <p id="heather-info">I'm a paragraph. Click here to add your own text and edit me. I'm a great place for you to tell a story.</p>
+                            </a>
+                            <a href="">
+                                <p id="heather-email">Email: info@mysite.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-div"> <!-- comment section -->
+                    <div class="user-div-account">
+                        <div style="display: flex;">
+                            <img src="../img/user.png.png" alt="user.png">
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-size: 12px; font-family: paletino;">Admin</span>
+                            <div style="display: flex; align-items: center; gap: 5px; font-family: paletino; font-size: 12px;">
+                                <span>May 23, 2023</span>
+                                <div style="width: 2px; height: 2px; border-radius: 50%; background-color: black;"></div> <!-- dot between the two spans -->
+                                <span>2 min read</span>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="user-div-header">
+                        <h2>Fresh from out garden</h2>
+                    </div>
+                    <div class="user-div-comment">
+                        <span>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</span>
+                    </div>
+                    <div style="width: 607px; height: 1px; background-color: #b5b5b5;"></div> <!-- Comment underline -->
+                    <div class="audience">
+                        <div class="post-stats">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>37</span>
+                            </div>
+                            <div class="comments">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post" id="blog-post-list">
+                <div class="blog-post-columned">
+                    <img src="../img/Vegetables.jpg" alt="vegetables" id="blog-img"> <!-- img can be changed by image source edit -->
+                </div>
+                <div class="user-div"> <!-- comment section -->
+                    <div class="user-div-account">
+                        <div style="display: flex;">
+                            <img src="../img/user.png.png" alt="user.png">
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-size: 12px; font-family: paletino;">Admin</span>
+                            <div style="display: flex; align-items: center; gap: 5px; font-family: paletino; font-size: 12px;">
+                                <span>May 23, 2023</span>
+                                <div style="width: 2px; height: 2px; border-radius: 50%; background-color: black;"></div> <!-- dot between the two spans -->
+                                <span>1 min read</span>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="user-div-header">
+                        <h2>Fresh Recipe Ideas</h2>
+                    </div>
+                    <div class="user-div-comment">
+                        <span>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</span>
+                    </div>
+                    <div style="max-width: 607px; min-width: 120px; height: 1px; background-color: #b5b5b5;"></div> <!-- Comment underline -->
+                    <div class="audience">
+                        <div class="post-stats">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i> <!-- view symbol -->
+                                <span>23</span>
+                            </div>
+                            <div class="comments">
+                                <i class="fa-regular fa-comment"></i> <!-- comment symbol -->
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <span>1</span>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post" id="blog-post-list">
+                <div class="blog-post-columned">
+                    <img src="../img/Chocolate.jpg" alt="Chocolate" id="blog-img"> <!-- img can be changed by image source edit -->
+                </div>
+                <div class="user-div"> <!-- comment section -->
+                    <div class="user-div-account">
+                        <div style="display: flex;">
+                            <img src="../img/user.png.png" alt="user.png">
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-size: 12px; font-family: paletino;">Admin</span>
+                            <div style="display: flex; align-items: center; gap: 5px; font-family: paletino; font-size: 12px;">
+                                <span>May 23, 2023</span>
+                                <div style="width: 2px; height: 2px; border-radius: 50%; background-color: black;"></div> <!-- dot between the two spans -->
+                                <span>2 min read</span>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="user-div-header">
+                        <h2>Fresh from out garden</h2>
+                    </div>
+                    <div class="user-div-comment">
+                        <span>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</span>
+                    </div>
+                    <div style="width: 607px; height: 1px; background-color: #b5b5b5;"></div> <!-- Comment underline -->
+                    <div class="audience">
+                        <div class="post-stats">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>19</span>
+                            </div>
+                            <div class="comments">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="read-more-main">
+                <div class="read-more">
+                    <span>Read More</span>
+                </div>
+            </div>
+            <div class="instagram-tag">
+                <span>Follow us on Instagram</span>
+                <a href="">@lifestyle.mom.blog</a>
+                <a href="">#wix</a>
+            </div>
+            <div class="blog-library">
+                <div class="blog-library-photo">
+                    <div class="library-soap">
+                        <img src="../img/soap.jpg" alt="">
+                        <span>#wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </div>
+                <div class="blog-library-photo">
+                    <div class="library-soap">
+                        <img src="../img/Lime.jpg" alt="">
+                        <span>#wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </div>
+                <div class="blog-library-photo">
+                    <div class="library-soap">
+                        <img src="../img/child.jpg" alt="">
+                        <span>#wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </div>
+                <div class="blog-library-photo">
+                    <div class="library-soap">
+                        <img src="../img/plant.jpg" alt="">
+                        <span>#wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </div>
+                <div class="blog-library-photo">
+                    <div class="library-soap">
+                        <img src="../img/child&book.jpg" alt="">
+                        <span>#wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </div>
+                <div class="blog-library-photo">
+                    <div class="library-soap">
+                        <img src="../img/vegetables-croped.jpg" alt="">
+                        <span>#wix, #website, #freewebsite, #websitetemplate, #wix.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container-main">
+            <span>JOIN MY MAILING LIFESTYLE</span>
+        </div>
+        <form>
+            <div class="input-container">
+                <div class="input-email">
+                    <label for="user-email">Email *</label>
+                    <input type="email" name="user_email" id="user_email" class="input-field" placeholder=" carl.johnson@gmail.com">
+                    <p> <i class="fa-solid fa-circle-exclamation"></i> Enter an email address</p>
+                </div>
+                <div class="input-notification">
+                    <label for="notification-activation">Yes, subscribe me to your newsletter</label>
+                    <input type="checkbox" name="notification-activation" id="notifiaction-activation" class="input-checkbox">
+                </div>
+                <div class="input-submit">
+                    <input type="submit" name="submit" id="email-submition">
+                </div>
+            </div>
+        </form>
+        <div class="copyright-container">
+            <p>© 2035 by Lovely Little Things. Powered and secured by <a href="">Wix</a></p>
+            <div class="footer-container-social-links">
+                <img src="../img/instagram.png" alt="instagram">
+                <img src="../img/youtube.png" alt="youtube">
+                <img src="../img/facebook.png" alt="facebook">
+                <img src="../img/pinterest.png" alt="pinterest">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
