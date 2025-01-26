@@ -1,23 +1,31 @@
 $PrimaryFontColor: #2F2E2E;
 $LibraryFontColor: #F8F8F8;
 $PrimaryBgColor: rgb(255, 229, 206);
+$InputWarningColor: #FF4040;
 
 @font-face {
-    font-family: "avenir";
-    src: url(../fonts/avenir-next/AvenirNextLTPro-Regular.otf);
+    font-family: 'avenir';
+    src: url('../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.eot');
+    src: url('../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.woff') format('woff'),
+        url('../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "paletino";
-    src: url(../fonts/paletino/pala.regular.ttf);
+    font-family: 'palatino';
+    src: url(../../../styles/fonts/palatino/pala.ttf);
 }
 
 @font-face {
-    font-family: "paletinob";
-    src: url(../fonts/paletino/pala.bold.ttf);
+    font-family: 'palatinob';
+    src: url(../../../fonts/palatino/palab.ttf);
 }
 
 @font-face {
-    font-family: HelvetiicaNeueLight;
-    src: url(../fonts/helvetica-neue/HelveticaNeueLight.otf);
+    font-family: "HelveticaNeueLight";
+    src: url(../../../fonts/helvetica-neue/HelveticaNeueLight.otf);
 }

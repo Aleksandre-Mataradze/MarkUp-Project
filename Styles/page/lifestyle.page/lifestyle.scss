@@ -1,0 +1,409 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@import "../../config/config.scss";
+
+header{
+        position: sticky;
+        top: 0;
+        z-index: 5;
+
+        .header-container-main{
+            padding: 8px;
+            background-color: $PrimaryBgColor;
+
+            .header-container-main-margin{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 6%;
+
+                .header-container-pages{
+
+                    .page-box{
+                        display: flex;
+                        align-items: center;
+                        padding: 0px 15px;
+                        height: 50px;
+                        font-weight: 300;
+                        font-family: avenir;
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+
+                        }
+                    }
+                }
+
+                .header-container-social-links{
+                    display: flex;
+                    gap: 22px;
+                    align-items: center;
+                }
+            }
+        }
+        .lets-chat{
+            display: inline-block;
+            position: fixed;
+            left: 20px;
+            bottom: 0px;
+            z-index: 5;
+            border-top-right-radius: 24px;
+            border-top-left-radius: 24px;
+            min-width: 200px;
+            max-width: 340px;
+            height: 56px;
+            background-color: rgb(47, 46, 46);
+            font-family: HelvetiicaNeueLight;
+            cursor: pointer;
+        
+            .lets-chat-txtbox{
+                color: white;
+                display: flex;
+                height: 100%;
+                padding: 1px 18px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+        
+                i{
+                    font-size: 24px;
+                }
+            }
+        }
+
+    .scroll-up-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 35px;
+        bottom: 35px;
+        width: 60px;
+        height: 60px;
+        background-color: $PrimaryBgColor;
+        cursor: pointer;
+    }
+
+    #scroll-up-before{
+        z-index: 5;
+        transition-property: opacity;
+        transition-duration: 0.1s;
+        transition-timing-function: ease;
+    }
+
+    #scroll-up-before:hover{
+        opacity: 0;
+
+    }
+
+    #scroll-up-after{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 35px;
+        bottom: 35px;
+        width: 60px;
+        height: 60px;
+        z-index: 4;
+        cursor: pointer;
+
+    }
+}
+
+main{
+
+    .main-content-container{
+        display: flex;
+        justify-content: center;
+
+        .main-content{
+            display: flex;  
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 99px;
+
+            .main-content-header{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                font-family: palatinob;
+
+                h1{
+                    font-family: palatinob;
+                    font-size: 40px;
+                }
+
+                .header-under-line{
+                    width: 20px;
+                    height: 3px;
+                    background-color: black;
+    
+                }
+            }
+
+            .post{
+
+                .user-div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 28px 30px 25px 30px;
+                    width: 100%;
+    
+                    .user-div-account{
+                        display: flex;
+                        gap: 10px;
+                        color: $PrimaryFontColor;
+
+                        img{
+                            background-color: #b5b5b5;
+                            border-radius: 50%;
+                            width: 32px;
+                            height: 32px;
+                        }
+
+                        span{
+                            font-family: avenir;
+                        }
+                    } 
+    
+                    .user-div-header{
+                        font-family: palatinob;
+                        color: $PrimaryFontColor;
+                        font-size: 15px;
+                        // max-width: 608px;
+                        cursor: pointer;
+    
+                    }
+    
+                    .user-div-comment{
+                        font-family: avenir;
+                        color: $PrimaryFontColor;
+                        font-size: 14px;
+                        margin-bottom: 24px;
+                        // max-width: 608px;
+                        cursor: pointer;
+    
+                    }
+    
+                    .audience{
+                        display: flex;
+                        justify-content: space-between;
+                        // max-width: 608px;
+    
+    
+                        .post-stats{
+                            display: flex;
+                            gap: 30px;
+                            font-family: avenir;
+                            color: $PrimaryFontColor;
+    
+                            .views{
+                                display: flex;
+                                gap: 5px;
+                                align-items: center;
+                                font-size: 16px;
+    
+                                span{
+                                    font-size: 12px;
+                                }
+                            }
+    
+                            .comments{
+                                display: flex;
+                                gap: 5px;
+                                align-items: center;
+                                font-size: 16px;
+    
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+    
+                        .likes{
+                            font-size: 16px;
+                            color: #d45b5b;
+                            cursor: pointer;
+    
+                            span{
+                                color: $PrimaryFontColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{ 
+    background-color: $PrimaryBgColor;
+
+    .footer-container-main{
+        display: flex;
+
+        span{
+            font-family: avenir;
+            margin: 35px auto 15px auto;
+        }
+
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        font-family: avenir;
+
+        .input-email{
+            display: flex;
+            gap: 10px;
+            max-width: 723px;
+            width: 100%;
+            flex-direction: column;
+            margin: 0px auto;
+        
+    
+            label{
+                color: #7A7A7A;
+    
+            }
+    
+            input{
+                border: 1px solid black;
+                height: 40px;
+            }
+
+            input:invalid{
+                border-color: #ff4538;
+            }
+
+            input:focus{
+                outline: none;
+            }
+
+            p{
+                display: none;
+            }
+
+            input:invalid:focus + p{
+                display: block;
+                font-size: 14px;
+                color: #FF4040;
+            }
+        }
+
+        .input-notification{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            gap: 10px;
+            max-width: 723px;
+            width: 100%;
+            margin: 12px auto 0px auto;
+
+            label{
+                font-size: 15px;
+            }
+
+            input{
+                display: flex;
+                padding: 3px;
+                width: 16px;
+                height: 16px;
+                border: 1px solid black;
+                border-radius: 0px;
+                outline: none;
+                appearance: none;
+                cursor: pointer;
+                position: relative;
+                transition: background-color 0.8s ease-in;
+            }
+
+            input[type="checkbox"]:checked{
+                background-color: black;
+            }
+        }
+
+        .input-submit{
+            display: flex;
+            font-family: avenir;
+            max-width: 723px;
+            width: 100%;
+            margin: 12px auto 0px auto;
+            height: 40px;
+
+            cursor: pointer;
+            transition-property: background-color;
+            transition-duration: 0.6s;
+            transition-timing-function: ease;
+            
+
+            input{
+                color: white;
+                font-size: 15px;
+                background-color: rgb(47, 46, 46);
+                outline: none;
+                border: none;
+                width: 100%;
+            }
+
+            #email-submition{
+                cursor: pointer;
+                transition-property: background-color;
+                transition-duration: 0.6s;
+                transition-timing-function: ease;
+                
+            }
+
+            #email-submition:hover{
+                background-color: #2F2E2EAB;
+
+            }
+        }
+
+        .input-submit:hover{
+            background-color: #2f2e2eab;
+        }
+    }
+
+    .copyright-container{
+        display: flex;
+        justify-content: space-between;
+        margin: 48px auto 0px auto;
+        padding-bottom: 32px;
+        max-width: 723px;
+        font-family: avenir;
+        font-size: 15px;
+
+        p{
+            
+            a{
+                color: black;
+            }
+        }
+
+        .footer-container-social-links{
+            display: flex;
+            gap: 22px;
+            align-items: center;
+            cursor: pointer;
+
+            img{
+                height: 26px;
+                width: 26px;
+
+            }
+        }
+
+    }
+}

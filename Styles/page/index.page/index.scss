@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-@import "config/config.scss";
+@import "../../config/config.scss";
 
 header{
         position: sticky;
@@ -26,8 +26,14 @@ header{
                         align-items: center;
                         padding: 0px 15px;
                         height: 50px;
-                        font-family: avenir;
                         font-weight: 300;
+                        font-family: avenir;
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+
+                        }
                     }
                 }
 
@@ -128,7 +134,7 @@ main{
 
             #main-container-header-bottom{
                 font-size: 50px;
-                font-family: paletinob;
+                font-family: palatinob;
                 
             }
         }
@@ -179,7 +185,7 @@ main{
                     background-color: #FFE5CE;
 
                     a{
-                        font-family: paletino;
+                        font-family: palatino;
                         font-weight: 500;
                         font-size: 22px;
                         font-weight: 600;
@@ -318,7 +324,7 @@ main{
                 } 
 
                 .user-div-header{
-                    font-family: paletinob;
+                    font-family: palatinob;
                     color: $PrimaryFontColor;
                     font-size: 15px;
                     max-width: 608px;
@@ -372,11 +378,15 @@ main{
                     }
 
                     .likes{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
                         font-size: 16px;
                         color: #d45b5b;
                         cursor: pointer;
 
                         span{
+                            font-size: 12px;
                             color: $PrimaryFontColor;
                         }
                     }
@@ -421,7 +431,7 @@ main{
                 width: 100%;
                 margin: 0px auto 35px auto;
                 margin-top: 120px;
-                font-family: paletinob;
+                font-family: palatinob;
                 font-size: 28px;
 
                 a{
@@ -618,7 +628,7 @@ footer{
         }
 
         .input-submit:hover{
-            background-color: #2F2E2EAB;
+            background-color: #2f2e2eab;
         }
     }
 

@@ -5,19 +5,23 @@
 
 @font-face {
   font-family: "avenir";
-  src: url(../fonts/avenir-next/AvenirNextLTPro-Regular.otf);
+  src: url("../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.eot");
+  src: url("../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.woff") format("woff"), url("../../../fonts/avenir-next/transfonter.org-20250126-150942/AvenirNextLTPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "paletino";
-  src: url(../fonts/paletino/pala.regular.ttf);
+  font-family: "palatino";
+  src: url(../../../styles/fonts/palatino/pala.ttf);
 }
 @font-face {
-  font-family: "paletinob";
-  src: url(../fonts/paletino/pala.bold.ttf);
+  font-family: "palatinob";
+  src: url(../../../fonts/palatino/palab.ttf);
 }
 @font-face {
-  font-family: HelvetiicaNeueLight;
-  src: url(../fonts/helvetica-neue/HelveticaNeueLight.otf);
+  font-family: "HelveticaNeueLight";
+  src: url(../../../fonts/helvetica-neue/HelveticaNeueLight.otf);
 }
 header {
   position: sticky;
@@ -38,8 +42,12 @@ header .header-container-main .header-container-main-margin .header-container-pa
   align-items: center;
   padding: 0px 15px;
   height: 50px;
-  font-family: avenir;
   font-weight: 300;
+  font-family: avenir;
+}
+header .header-container-main .header-container-main-margin .header-container-pages .page-box a {
+  text-decoration: none;
+  color: black;
 }
 header .header-container-main .header-container-main-margin .header-container-social-links {
   display: flex;
@@ -122,7 +130,7 @@ main .main-container-header #main-container-header-top {
 }
 main .main-container-header #main-container-header-bottom {
   font-size: 50px;
-  font-family: paletinob;
+  font-family: palatinob;
 }
 main #lovely-little-things {
   width: 100%;
@@ -163,7 +171,7 @@ main section .section-categories .click-to-edit {
   background-color: #FFE5CE;
 }
 main section .section-categories .click-to-edit a {
-  font-family: paletino;
+  font-family: palatino;
   font-weight: 500;
   font-size: 22px;
   font-weight: 600;
@@ -260,7 +268,7 @@ main .blogs .user-div .user-div-account img {
   height: 32px;
 }
 main .blogs .user-div .user-div-header {
-  font-family: paletinob;
+  font-family: palatinob;
   color: #2F2E2E;
   font-size: 15px;
   max-width: 608px;
@@ -304,11 +312,15 @@ main .blogs .user-div .audience .post-stats .comments span {
   font-size: 16px;
 }
 main .blogs .user-div .audience .likes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: 16px;
   color: #d45b5b;
   cursor: pointer;
 }
 main .blogs .user-div .audience .likes span {
+  font-size: 12px;
   color: #2F2E2E;
 }
 main .blogs #blog-post-list {
@@ -345,7 +357,7 @@ main .blogs .instagram-tag {
   width: 100%;
   margin: 0px auto 35px auto;
   margin-top: 120px;
-  font-family: paletinob;
+  font-family: palatinob;
   font-size: 28px;
 }
 main .blogs .instagram-tag a {
@@ -525,4 +537,4 @@ footer .copyright-container .footer-container-social-links {
 footer .copyright-container .footer-container-social-links img {
   height: 26px;
   width: 26px;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=index.css.map */
