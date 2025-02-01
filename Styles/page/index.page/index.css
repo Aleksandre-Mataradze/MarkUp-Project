@@ -66,7 +66,7 @@ header .lets-chat {
   max-width: 340px;
   height: 56px;
   background-color: rgb(47, 46, 46);
-  font-family: HelvetiicaNeueLight;
+  font-family: HelveticaNeueLight;
   cursor: pointer;
 }
 header .lets-chat .lets-chat-txtbox {
@@ -136,12 +136,25 @@ main #lovely-little-things {
   width: 100%;
   height: 679px;
 }
+@media (max-width: 768px) {
+  main #lovely-little-things {
+    height: 449px;
+  }
+}
 main section .section-categories {
   display: flex;
   justify-content: center;
   align-items: end;
+  position: relative;
   gap: 50px;
-  height: 522px;
+  padding: 50px;
+}
+@media (max-width: 768px) {
+  main section .section-categories {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 main section .section-categories .section-categories-divs {
   display: flex;
@@ -190,6 +203,18 @@ main section .section-categories .click-to-edit div {
   height: 4px;
   cursor: default;
 }
+main section .section-categories .lifestyle {
+  background-color: #FFE5CE;
+  cursor: pointer;
+}
+main section .section-categories .family {
+  background-color: #EAF2F5;
+  cursor: pointer;
+}
+main section .section-categories .food {
+  background-color: #E8F3E4;
+  cursor: pointer;
+}
 main .blogs {
   display: flex;
   flex-direction: column;
@@ -211,6 +236,12 @@ main .blogs .blog-post .blog-post-columned {
   width: 100%;
   max-width: 992px;
 }
+@media (max-width: 768px) {
+  main .blogs .blog-post .blog-post-columned {
+    justify-content: center;
+    gap: 0px;
+  }
+}
 main .blogs .blog-post .blog-post-columned .heather {
   position: absolute;
   max-width: 261px;
@@ -218,6 +249,11 @@ main .blogs .blog-post .blog-post-columned .heather {
   background-color: #EAF2F5;
   font-family: avenir;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  main .blogs .blog-post .blog-post-columned .heather {
+    display: none;
+  }
 }
 main .blogs .blog-post .blog-post-columned .heather .heather-text {
   display: flex;
@@ -339,6 +375,11 @@ main .blogs .read-more-main {
   margin-top: 60px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  main .blogs .read-more-main {
+    justify-content: center;
+  }
+}
 main .blogs .read-more-main .read-more {
   display: flex;
   justify-content: center;
@@ -375,6 +416,23 @@ main .blogs .blog-library {
   overflow: hidden;
   gap: 0;
   font-family: avenir;
+}
+@media (max-width: 768px) {
+  main .blogs .blog-library {
+    overflow-x: auto;
+  }
+  main .blogs .blog-library::-webkit-scrollbar {
+    height: 6px;
+  }
+  main .blogs .blog-library::-webkit-scrollbar-track {
+    width: 15px;
+    background-color: rgb(255, 229, 206);
+  }
+  main .blogs .blog-library::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #EAF2F5;
+    border-radius: 12px;
+  }
 }
 main .blogs .blog-library .blog-library-photo {
   position: relative;
@@ -433,6 +491,11 @@ footer .input-container .input-email {
   flex-direction: column;
   margin: 0px auto;
 }
+@media (max-width: 768px) {
+  footer .input-container .input-email {
+    max-width: 598px;
+  }
+}
 footer .input-container .input-email label {
   color: #7A7A7A;
 }
@@ -462,6 +525,11 @@ footer .input-container .input-notification {
   max-width: 723px;
   width: 100%;
   margin: 12px auto 0px auto;
+}
+@media (max-width: 768px) {
+  footer .input-container .input-notification {
+    max-width: 598px;
+  }
 }
 footer .input-container .input-notification label {
   font-size: 15px;
@@ -496,6 +564,11 @@ footer .input-container .input-submit {
   transition-duration: 0.6s;
   transition-timing-function: ease;
 }
+@media (max-width: 768px) {
+  footer .input-container .input-submit {
+    max-width: 598px;
+  }
+}
 footer .input-container .input-submit input {
   color: white;
   font-size: 15px;
@@ -525,6 +598,13 @@ footer .copyright-container {
   font-family: avenir;
   font-size: 15px;
 }
+@media (max-width: 768px) {
+  footer .copyright-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
 footer .copyright-container p a {
   color: black;
 }
@@ -532,9 +612,14 @@ footer .copyright-container .footer-container-social-links {
   display: flex;
   gap: 22px;
   align-items: center;
-  cursor: pointer;
+}
+@media (max-width: 768px) {
+  footer .copyright-container .footer-container-social-links {
+    gap: 24px;
+  }
 }
 footer .copyright-container .footer-container-social-links img {
   height: 26px;
   width: 26px;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

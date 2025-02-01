@@ -28,6 +28,12 @@ header{
                     height: 50px;
                     font-family: avenir;
                     font-weight: 300;
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+
+                    }
                 }
             }
 
@@ -50,7 +56,7 @@ header{
         max-width: 340px;
         height: 56px;
         background-color: rgb(47, 46, 46);
-        font-family: HelvetiicaNeueLight;
+        font-family: HelveticaNeueLight;
         cursor: pointer;
     
         .lets-chat-txtbox{
@@ -122,6 +128,11 @@ main{
             gap: 40px;
             margin-top: 99px;
             margin-bottom: 715px;
+
+            @media (max-width: 768px){
+                margin-bottom: 795px;
+
+            }
     
             .main-content-header{
                 display: flex;
@@ -149,9 +160,13 @@ main{
                 position: relative;
     
                 img{
-                    width: 981px;
+                    max-width: 981px;
                     height: 671px;
                     
+                    @media (max-width: 768px) {
+                        width: 628px;
+                        height: auto;
+                    }
                 }
     
                 .content-img-info{
@@ -166,6 +181,11 @@ main{
                     padding: 0px 96px 65px 96px;
                     width: 795px;
                     background-color: #EAF2F5;
+
+                    @media (max-width: 768px) {
+                        width: 528px;
+                        padding: 0px 48px 45px 48px;
+                    }
     
                     h2{
                         font-family: palatinob;
@@ -321,8 +341,12 @@ footer{
             width: 100%;
             flex-direction: column;
             margin: 0px auto;
-        
-    
+            
+            @media (max-width: 768px){
+                max-width: 598px;
+
+            }
+
             label{
                 color: #7A7A7A;
     
@@ -361,6 +385,11 @@ footer{
             width: 100%;
             margin: 12px auto 0px auto;
 
+            @media (max-width: 768px){
+                max-width: 598px;
+
+            }
+
             label{
                 font-size: 15px;
             }
@@ -391,12 +420,15 @@ footer{
             width: 100%;
             margin: 12px auto 0px auto;
             height: 40px;
-
             cursor: pointer;
             transition-property: background-color;
             transition-duration: 0.6s;
             transition-timing-function: ease;
             
+            @media (max-width: 768px){
+                max-width: 598px;
+
+            }
 
             input{
                 color: white;
@@ -422,7 +454,7 @@ footer{
         }
 
         .input-submit:hover{
-            background-color: #2F2E2EAB;
+            background-color: #2f2e2eab;
         }
     }
 
@@ -434,6 +466,12 @@ footer{
         max-width: 723px;
         font-family: avenir;
         font-size: 15px;
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
 
         p{
             
@@ -446,11 +484,17 @@ footer{
             display: flex;
             gap: 22px;
             align-items: center;
-            cursor: pointer;
+
+
+            @media (max-width: 768px){
+                gap: 24px;
+
+            }
 
             img{
                 height: 26px;
                 width: 26px;
+                cursor: pointer;
 
             }
         }

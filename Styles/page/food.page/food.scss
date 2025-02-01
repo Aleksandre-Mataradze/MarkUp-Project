@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -128,6 +127,7 @@ main{
             align-items: center;
             gap: 40px;
             margin-top: 99px;
+            margin-bottom: 200px;
 
             .main-content-header{
                 display: flex;
@@ -158,7 +158,7 @@ main{
                 .post-img{
 
                     img{
-
+                        
                         @media (max-width: 768px) {
                             width: 628px;
                         }
@@ -188,7 +188,7 @@ main{
                             width: 32px;
                             height: 32px;
                         }
-
+                        
                         span{
                             font-family: avenir;
                         }
@@ -214,7 +214,7 @@ main{
                     .audience{
                         display: flex;
                         justify-content: space-between;
-
+    
                         .post-stats{
                             display: flex;
                             gap: 30px;
