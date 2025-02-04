@@ -23,6 +23,7 @@ header{
             .header-container-main-margin{
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 margin: 0 6%;
 
                 @media (max-width: 320px) {
@@ -31,6 +32,11 @@ header{
                 }
 
                 .header-container-pages{
+
+                    @media (max-width: 768px){
+                        display: none;
+
+                    }
 
                     .page-box{
                         display: flex;
@@ -52,6 +58,33 @@ header{
                     display: flex;
                     gap: 22px;
                     align-items: center;
+                }
+
+                .hamburger-menu{
+                    display: none;
+    
+                    @media (max-width: 768px){
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6px;
+                        cursor: pointer;
+    
+                    }
+    
+                    @media (max-width: 320px) {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6px;
+                        cursor: pointer;
+                    
+                    }
+    
+                    .hamburger-line{
+                        border-radius: 8px;
+                        background-color: black;
+                        width: 22px;
+                        height: 2px;
+                    }
                 }
             }
 
@@ -89,6 +122,11 @@ header{
             font-family: HelveticaNeueLight;
             cursor: pointer;
 
+            @media (max-width: 768px){
+                display: none;
+                
+            }
+
             @media (max-width: 320px){
                 display: none;
                 
@@ -121,6 +159,11 @@ header{
         background-color: $PrimaryBgColor;
         cursor: pointer;
 
+        @media (max-width: 768px) {
+            display: none;
+            
+        }
+
         @media (max-width: 320px){
             display: none;
             
@@ -138,6 +181,11 @@ header{
         height: 50px;
         border-radius: 50%;
         background-color: rgb(47, 46, 46);
+
+        @media (max-width: 768px){
+            display: flex;
+            
+        }
 
         @media (max-width: 320px){
             display: flex;
@@ -181,7 +229,9 @@ main{
 
         .main-container-header{
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
             position: relative;
             height: 200px;
 
@@ -191,7 +241,7 @@ main{
             }
 
             span{
-                position: absolute;
+
             }
 
             #main-container-header-top{
@@ -222,6 +272,7 @@ main{
         #lovely-little-things{
             width: 100%;
             height: 679px;
+            object-fit: cover;
 
             @media (max-width: 768px) {
                 height: 449px;
@@ -254,11 +305,12 @@ main{
 
             .section-categories{
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: end;
                 position: relative;
                 gap: 50px;
-                padding: 50px;
+                padding: 50px 6px;
 
                 @media (max-width: 768px){
                     flex-direction: column;
@@ -277,6 +329,10 @@ main{
                     position: relative;
                     margin-bottom: 100px;
 
+                    img{
+                        width: 100%;
+                    }
+
                     #img-family-rotation{
                         transform: rotate(180deg);
                     }
@@ -284,8 +340,6 @@ main{
                 
                 img{
                     position: relative;
-                    width: 312px;
-                    height: 281px;
                     cursor: pointer;
 
                     @media (max-width: 320px) {
@@ -368,7 +422,13 @@ main{
                 justify-content: center ;
                 margin: 40px auto 0px auto;
                 width: 100%;
+                padding: 12px;
                 align-items: center;
+
+                @media (max-width: 990px) {
+                    align-items: center;
+                    
+                }
 
                 .blog-post-columned{
                     display: flex;
@@ -378,12 +438,18 @@ main{
                     width: 100%;
                     max-width: 992px;
 
+                    @media (max-width: 990px) {
+                        justify-content: center;   
+                    
+                    }
+
                     @media (max-width: 768px){
                         justify-content: center;
                         gap: 0px;
                     }
 
                     img{
+                        cursor: pointer;
 
                         @media (max-width: 320px) {
                             width: 280px;
@@ -399,6 +465,11 @@ main{
                         background-color: #EAF2F5;
                         font-family: avenir;
                         overflow: hidden;
+
+                        @media (max-width: 990px) {
+                            display: none;
+                            
+                        }
 
                         @media (max-width: 768px){
                             display: none;
@@ -433,15 +504,17 @@ main{
                         }
                     }
 
-                    img{
-                        cursor: pointer;
+                    #blog-img{
+                        width: 100%;
+                        object-fit: cover;
                     }
                 }
                 
 
                 #tomatoes{
-                    width: 669px;
-                    height: 501px;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
     
                     @media (max-width: 320px) {
                         width: 280px;
@@ -458,7 +531,7 @@ main{
                 padding: 28px 30px 25px;
                 max-width: 608px;
                 width: 100%;
-                max-width: 992px;
+                max-width: 669px;
 
                 .user-div-account{
                     display: flex;
@@ -638,6 +711,7 @@ main{
             .instagram-tag{
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 gap: 12px;
                 width: 100%;
                 margin: 0px auto 35px auto;
@@ -747,6 +821,7 @@ main{
 
 footer{ 
     background-color: $PrimaryBgColor;
+    padding: 12px;
 
     .footer-container-main{
         display: flex;

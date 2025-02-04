@@ -42,10 +42,16 @@ header .header-container-main {
 header .header-container-main .header-container-main-margin {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 6%;
 }
 @media (max-width: 320px) {
   header .header-container-main .header-container-main-margin {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .header-container-main .header-container-main-margin .header-container-pages {
     display: none;
   }
 }
@@ -65,6 +71,31 @@ header .header-container-main .header-container-main-margin .header-container-so
   display: flex;
   gap: 22px;
   align-items: center;
+}
+header .header-container-main .header-container-main-margin .hamburger-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  header .header-container-main .header-container-main-margin .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 320px) {
+  header .header-container-main .header-container-main-margin .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+}
+header .header-container-main .header-container-main-margin .hamburger-menu .hamburger-line {
+  border-radius: 8px;
+  background-color: black;
+  width: 22px;
+  height: 2px;
 }
 header .header-container-main .hamburger-menu {
   display: none;
@@ -98,6 +129,11 @@ header .lets-chat {
   font-family: HelveticaNeueLight;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  header .lets-chat {
+    display: none;
+  }
+}
 @media (max-width: 320px) {
   header .lets-chat {
     display: none;
@@ -127,6 +163,11 @@ header .scroll-up-container {
   background-color: rgb(255, 229, 206);
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  header .scroll-up-container {
+    display: none;
+  }
+}
 @media (max-width: 320px) {
   header .scroll-up-container {
     display: none;
@@ -143,6 +184,11 @@ header .lets-chat-round {
   height: 50px;
   border-radius: 50%;
   background-color: rgb(47, 46, 46);
+}
+@media (max-width: 768px) {
+  header .lets-chat-round {
+    display: flex;
+  }
 }
 @media (max-width: 320px) {
   header .lets-chat-round {
@@ -177,7 +223,9 @@ header #scroll-up-after {
 
 main .main-container-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: relative;
   height: 200px;
 }
@@ -185,9 +233,6 @@ main .main-container-header {
   main .main-container-header {
     max-height: 100px;
   }
-}
-main .main-container-header span {
-  position: absolute;
 }
 main .main-container-header #main-container-header-top {
   font-size: 16px;
@@ -214,6 +259,8 @@ main .main-container-header #main-container-header-bottom {
 main #lovely-little-things {
   width: 100%;
   height: 679px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 768px) {
   main #lovely-little-things {
@@ -241,11 +288,12 @@ main #lovely-little-things-320px {
 }
 main section .section-categories {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: end;
   position: relative;
   gap: 50px;
-  padding: 50px;
+  padding: 50px 6px;
 }
 @media (max-width: 768px) {
   main section .section-categories {
@@ -265,13 +313,14 @@ main section .section-categories .section-categories-divs {
   position: relative;
   margin-bottom: 100px;
 }
+main section .section-categories .section-categories-divs img {
+  width: 100%;
+}
 main section .section-categories .section-categories-divs #img-family-rotation {
   transform: rotate(180deg);
 }
 main section .section-categories img {
   position: relative;
-  width: 312px;
-  height: 281px;
   cursor: pointer;
 }
 @media (max-width: 320px) {
@@ -341,7 +390,13 @@ main .blogs .blog-post {
   justify-content: center;
   margin: 40px auto 0px auto;
   width: 100%;
+  padding: 12px;
   align-items: center;
+}
+@media (max-width: 990px) {
+  main .blogs .blog-post {
+    align-items: center;
+  }
 }
 main .blogs .blog-post .blog-post-columned {
   display: flex;
@@ -351,11 +406,19 @@ main .blogs .blog-post .blog-post-columned {
   width: 100%;
   max-width: 992px;
 }
+@media (max-width: 990px) {
+  main .blogs .blog-post .blog-post-columned {
+    justify-content: center;
+  }
+}
 @media (max-width: 768px) {
   main .blogs .blog-post .blog-post-columned {
     justify-content: center;
     gap: 0px;
   }
+}
+main .blogs .blog-post .blog-post-columned img {
+  cursor: pointer;
 }
 @media (max-width: 320px) {
   main .blogs .blog-post .blog-post-columned img {
@@ -370,6 +433,11 @@ main .blogs .blog-post .blog-post-columned .heather {
   background-color: #EAF2F5;
   font-family: avenir;
   overflow: hidden;
+}
+@media (max-width: 990px) {
+  main .blogs .blog-post .blog-post-columned .heather {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   main .blogs .blog-post .blog-post-columned .heather {
@@ -396,12 +464,16 @@ main .blogs .blog-post .blog-post-columned .heather .heather-text #heather-info 
 main .blogs .blog-post .blog-post-columned .heather .heather-text #heather-email {
   margin-top: 12px;
 }
-main .blogs .blog-post .blog-post-columned img {
-  cursor: pointer;
+main .blogs .blog-post .blog-post-columned #blog-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .blogs .blog-post #tomatoes {
-  width: 669px;
-  height: 501px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 320px) {
   main .blogs .blog-post #tomatoes {
@@ -416,7 +488,7 @@ main .blogs .user-div {
   padding: 28px 30px 25px;
   max-width: 608px;
   width: 100%;
-  max-width: 992px;
+  max-width: 669px;
 }
 main .blogs .user-div .user-div-account {
   display: flex;
@@ -566,6 +638,7 @@ main .blogs .heather-320px .heather-text #heather-email {
 main .blogs .instagram-tag {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
   width: 100%;
   margin: 0px auto 35px auto;
@@ -657,6 +730,7 @@ main .blogs .blog-library .blog-library-photo .library-soap:hover span {
 
 footer {
   background-color: rgb(255, 229, 206);
+  padding: 12px;
 }
 footer .footer-container-main {
   display: flex;
