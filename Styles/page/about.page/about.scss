@@ -14,10 +14,21 @@ header{
         padding: 8px;
         background-color: $PrimaryBgColor;
 
+        @media (max-width: 320px) {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0px;
+        }
+
         .header-container-main-margin{
             display: flex;
             justify-content: space-between;
             margin: 0 6%;
+
+            @media (max-width: 320px) {
+                display: none;
+                
+            }
 
             .header-container-pages{
 
@@ -43,6 +54,25 @@ header{
                 align-items: center;
             }
         }
+
+        .hamburger-menu{
+            display: none;
+
+            @media (max-width: 320px) {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                cursor: pointer;
+            
+            }
+
+            .hamburger-line{
+                border-radius: 8px;
+                background-color: black;
+                width: 22px;
+                height: 2px;
+            }
+        }
     }
     .lets-chat{
         display: inline-block;
@@ -58,6 +88,11 @@ header{
         background-color: rgb(47, 46, 46);
         font-family: HelveticaNeueLight;
         cursor: pointer;
+
+        @media (max-width: 320px){
+            display: none;
+            
+        }
     
         .lets-chat-txtbox{
             color: white;
@@ -85,6 +120,34 @@ header{
     height: 60px;
     background-color: $PrimaryBgColor;
     cursor: pointer;
+
+    @media (max-width: 320px){
+        display: none;
+        
+    }
+}
+
+.lets-chat-round{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(47, 46, 46);
+
+    @media (max-width: 320px){
+        display: flex;
+    
+    }
+
+    i{
+        font-size: 21px;
+        color: white;
+    }
 }
 
 #scroll-up-before{
@@ -133,6 +196,12 @@ main{
                 margin-bottom: 795px;
 
             }
+
+            @media (max-width: 320px){
+                margin-top: 36px;
+                margin-bottom: 1215px;
+                
+            }
     
             .main-content-header{
                 display: flex;
@@ -144,6 +213,11 @@ main{
     
                 h1{
                     font-size: 40px;
+
+                    @media (max-width: 320px){
+                        font-size: 30px;
+                        
+                    }        
                 }
     
                 .header-under-line{
@@ -167,6 +241,12 @@ main{
                         width: 628px;
                         height: auto;
                     }
+
+                    @media (max-width: 320px){
+                        width: 280px;
+                        height: auto;
+                        
+                    }
                 }
     
                 .content-img-info{
@@ -186,6 +266,13 @@ main{
                         width: 528px;
                         padding: 0px 48px 45px 48px;
                     }
+
+                    @media (max-width: 320px){
+                        width: 280px;
+                        top: auto;
+                        bottom: -1165px;
+                        padding: 0px 22px 45px 22px;
+                    }        
     
                     h2{
                         font-family: palatinob;
@@ -210,6 +297,11 @@ main{
                             gap: 16px;
                             font-size: 15px;
                             color: #373B4D;
+
+                            @media (max-width: 320px){
+                                flex-direction: column;
+                                
+                            }
 
                             .username{
                                 display: flex;
@@ -347,6 +439,11 @@ footer{
 
             }
 
+            @media (max-width: 320px){
+                max-width: 284px;
+                
+            }
+
             label{
                 color: #7A7A7A;
     
@@ -390,6 +487,11 @@ footer{
 
             }
 
+            @media (max-width: 320px){
+                max-width: 284px;
+                
+            }
+
             label{
                 font-size: 15px;
             }
@@ -428,6 +530,11 @@ footer{
             @media (max-width: 768px){
                 max-width: 598px;
 
+            }
+
+            @media (max-width: 320px){
+                max-width: 284px;
+                
             }
 
             input{
@@ -471,6 +578,11 @@ footer{
             flex-direction: column;
             align-items: center;
             gap: 24px;
+        }
+
+        @media (max-width: 320px){
+            max-width: 284px;
+            
         }
 
         p{

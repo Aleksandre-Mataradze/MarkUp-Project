@@ -14,10 +14,21 @@ header{
             padding: 8px;
             background-color: $PrimaryBgColor;
 
+            @media (max-width: 320px) {
+                display: flex;
+                justify-content: center;
+                padding: 20px 0px;
+            }
+
             .header-container-main-margin{
                 display: flex;
                 justify-content: space-between;
                 margin: 0 6%;
+
+                @media (max-width: 320px) {
+                    display: none;
+                    
+                }
 
                 .header-container-pages{
 
@@ -43,6 +54,25 @@ header{
                     align-items: center;
                 }
             }
+
+            .hamburger-menu{
+                display: none;
+
+                @media (max-width: 320px) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    cursor: pointer;
+                
+                }
+
+                .hamburger-line{
+                    border-radius: 8px;
+                    background-color: black;
+                    width: 22px;
+                    height: 2px;
+                }
+            }
         }
         .lets-chat{
             display: inline-block;
@@ -58,6 +88,11 @@ header{
             background-color: rgb(47, 46, 46);
             font-family: HelveticaNeueLight;
             cursor: pointer;
+
+            @media (max-width: 320px){
+                display: none;
+                
+            }
         
             .lets-chat-txtbox{
                 color: white;
@@ -85,6 +120,34 @@ header{
         height: 60px;
         background-color: $PrimaryBgColor;
         cursor: pointer;
+
+        @media (max-width: 320px){
+            display: none;
+            
+        }
+    }
+
+    .lets-chat-round{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(47, 46, 46);
+
+        @media (max-width: 320px){
+            display: flex;
+        
+        }
+    
+        i{
+            font-size: 21px;
+            color: white;
+        }
     }
 
     #scroll-up-before{
@@ -122,6 +185,11 @@ main{
             position: relative;
             height: 200px;
 
+            @media (max-width: 320px){
+                max-height: 100px;
+
+            }
+
             span{
                 position: absolute;
             }
@@ -129,13 +197,25 @@ main{
             #main-container-header-top{
                 font-size: 16px;
                 font-family: avenir;
+                top: 68px;
 
+                @media (max-width: 320px) {
+                    font-size: 14px;
+                    top: 18px;
+                
+                }
             }
 
             #main-container-header-bottom{
                 font-size: 50px;
                 font-family: palatinob;
+                bottom: 42px;
+
+                @media (max-width: 320px) {
+                    font-size: 26px;
+                    bottom: 20px;
                 
+            }
             }
         }
 
@@ -148,6 +228,22 @@ main{
 
             }
 
+            @media (max-width: 320px) {
+                display: none;
+            }
+        }
+
+        #lovely-little-things-320px{
+            display: none;
+
+            @media (max-width: 320px) {
+                display: block;
+                width: 100%;
+                height: 343px;
+                object-fit: cover;
+                object-position: 50% 50%;
+                
+            }
         }
 
         section{
@@ -170,6 +266,11 @@ main{
                     align-items: center;
                 }
 
+                @media (max-width: 320px) {
+                    gap: 76px;
+                    
+                }
+
                 .section-categories-divs{
                     display: flex;
                     justify-content: center;
@@ -187,6 +288,11 @@ main{
                     height: 281px;
                     cursor: pointer;
 
+                    @media (max-width: 320px) {
+                        width: 221px;
+                        height: 201px;
+                        
+                    }
                 }
 
                 .click-to-edit{
@@ -200,6 +306,12 @@ main{
                     padding: 21px;
                     gap: 16px;
                     background-color: #FFE5CE;
+
+                    @media (max-width: 320px) {
+                        height: 121px;
+                        bottom: -130px;
+                        
+                    }
 
                     a{
                         font-family: palatino;
@@ -271,6 +383,15 @@ main{
                         gap: 0px;
                     }
 
+                    img{
+
+                        @media (max-width: 320px) {
+                            width: 280px;
+                            height: 210px;
+                            
+                        }
+                    }
+
                     .heather{
                         position: absolute;
                         max-width: 261px;
@@ -322,6 +443,11 @@ main{
                     width: 669px;
                     height: 501px;
     
+                    @media (max-width: 320px) {
+                        width: 280px;
+                        height: 210px;
+                        
+                    }
                 }
             }
 
@@ -365,6 +491,13 @@ main{
                     margin-bottom: 24px;
                     max-width: 608px;
                     cursor: pointer;
+
+                }
+
+                .user-div-underline{
+                    max-width: 608px;
+                    height: 1px;
+                    background-color: #b5b5b5;
 
                 }
 
@@ -455,6 +588,53 @@ main{
                 }
             }
 
+            .heather-320px{
+                display: none;
+                max-width: 261px;
+                right: 0px;
+                background-color: #EAF2F5;
+                font-family: avenir;
+                overflow: hidden;
+
+                @media (max-width: 768px){
+                    display: none;
+                }
+
+                @media (max-width: 320px){
+                    display: block;
+                    margin-inline: auto;
+                    margin-top: 32px;
+                }
+
+                .heather-text{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 32px;
+
+                    a{
+                        text-decoration: none;
+                        color: $PrimaryFontColor;
+                    }
+
+                    #heather-header{
+                        font-size: 16px;
+                        
+                    }
+
+                    #heather-info{
+                        margin-top: 24px;
+                        font-size: 15px; //How can I increase space between text lines?
+                        line-height: 25px;
+                        
+                    }
+
+                    #heather-email{
+                        margin-top: 12px;
+                    }
+
+                }
+            }
+
             .instagram-tag{
                 display: flex;
                 justify-content: center;
@@ -465,12 +645,25 @@ main{
                 font-family: palatinob;
                 font-size: 28px;
 
+                @media (max-width: 320px){
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 20px;
+                    margin-top: 46px;
+                    gap: 4px;
+                }
+
                 a{
                     text-decoration: none;
                     color: black;
                     transition-property: color;
                     transition-duration: 0.3s;
                     transition-timing-function: ease;
+
+                    @media (max-width: 320px){
+                        color: #2F2E2E;
+                        font-size: 16px;
+                    }
                 }
 
                 a:hover{
@@ -570,6 +763,7 @@ footer{
         flex-direction: column;
         font-family: avenir;
 
+
         .input-email{
             display: flex;
             gap: 10px;
@@ -581,6 +775,11 @@ footer{
             @media (max-width: 768px){
                 max-width: 598px;
 
+            }
+
+            @media (max-width: 320px){
+                max-width: 284px;
+                
             }
 
             label{
@@ -626,6 +825,11 @@ footer{
 
             }
 
+            @media (max-width: 320px){
+                max-width: 284px;
+                
+            }
+
             label{
                 font-size: 15px;
             }
@@ -664,6 +868,11 @@ footer{
             @media (max-width: 768px){
                 max-width: 598px;
 
+            }
+
+            @media (max-width: 320px){
+                max-width: 284px;
+                
             }
 
             input{
@@ -707,6 +916,11 @@ footer{
             flex-direction: column;
             align-items: center;
             gap: 24px;
+        }
+
+        @media (max-width: 320px){
+            max-width: 284px;
+            
         }
 
         p{

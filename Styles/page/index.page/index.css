@@ -32,10 +32,22 @@ header .header-container-main {
   padding: 8px;
   background-color: rgb(255, 229, 206);
 }
+@media (max-width: 320px) {
+  header .header-container-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+}
 header .header-container-main .header-container-main-margin {
   display: flex;
   justify-content: space-between;
   margin: 0 6%;
+}
+@media (max-width: 320px) {
+  header .header-container-main .header-container-main-margin {
+    display: none;
+  }
 }
 header .header-container-main .header-container-main-margin .header-container-pages .page-box {
   display: flex;
@@ -54,6 +66,23 @@ header .header-container-main .header-container-main-margin .header-container-so
   gap: 22px;
   align-items: center;
 }
+header .header-container-main .hamburger-menu {
+  display: none;
+}
+@media (max-width: 320px) {
+  header .header-container-main .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+}
+header .header-container-main .hamburger-menu .hamburger-line {
+  border-radius: 8px;
+  background-color: black;
+  width: 22px;
+  height: 2px;
+}
 header .lets-chat {
   display: inline-block;
   position: fixed;
@@ -68,6 +97,11 @@ header .lets-chat {
   background-color: rgb(47, 46, 46);
   font-family: HelveticaNeueLight;
   cursor: pointer;
+}
+@media (max-width: 320px) {
+  header .lets-chat {
+    display: none;
+  }
 }
 header .lets-chat .lets-chat-txtbox {
   color: white;
@@ -92,6 +126,32 @@ header .scroll-up-container {
   height: 60px;
   background-color: rgb(255, 229, 206);
   cursor: pointer;
+}
+@media (max-width: 320px) {
+  header .scroll-up-container {
+    display: none;
+  }
+}
+header .lets-chat-round {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(47, 46, 46);
+}
+@media (max-width: 320px) {
+  header .lets-chat-round {
+    display: flex;
+  }
+}
+header .lets-chat-round i {
+  font-size: 21px;
+  color: white;
 }
 header #scroll-up-before {
   z-index: 5;
@@ -121,16 +181,35 @@ main .main-container-header {
   position: relative;
   height: 200px;
 }
+@media (max-width: 320px) {
+  main .main-container-header {
+    max-height: 100px;
+  }
+}
 main .main-container-header span {
   position: absolute;
 }
 main .main-container-header #main-container-header-top {
   font-size: 16px;
   font-family: avenir;
+  top: 68px;
+}
+@media (max-width: 320px) {
+  main .main-container-header #main-container-header-top {
+    font-size: 14px;
+    top: 18px;
+  }
 }
 main .main-container-header #main-container-header-bottom {
   font-size: 50px;
   font-family: palatinob;
+  bottom: 42px;
+}
+@media (max-width: 320px) {
+  main .main-container-header #main-container-header-bottom {
+    font-size: 26px;
+    bottom: 20px;
+  }
 }
 main #lovely-little-things {
   width: 100%;
@@ -139,6 +218,25 @@ main #lovely-little-things {
 @media (max-width: 768px) {
   main #lovely-little-things {
     height: 449px;
+  }
+}
+@media (max-width: 320px) {
+  main #lovely-little-things {
+    display: none;
+  }
+}
+main #lovely-little-things-320px {
+  display: none;
+}
+@media (max-width: 320px) {
+  main #lovely-little-things-320px {
+    display: block;
+    width: 100%;
+    height: 343px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
 }
 main section .section-categories {
@@ -156,6 +254,11 @@ main section .section-categories {
     align-items: center;
   }
 }
+@media (max-width: 320px) {
+  main section .section-categories {
+    gap: 76px;
+  }
+}
 main section .section-categories .section-categories-divs {
   display: flex;
   justify-content: center;
@@ -171,6 +274,12 @@ main section .section-categories img {
   height: 281px;
   cursor: pointer;
 }
+@media (max-width: 320px) {
+  main section .section-categories img {
+    width: 221px;
+    height: 201px;
+  }
+}
 main section .section-categories .click-to-edit {
   display: flex;
   flex-direction: column;
@@ -182,6 +291,12 @@ main section .section-categories .click-to-edit {
   padding: 21px;
   gap: 16px;
   background-color: #FFE5CE;
+}
+@media (max-width: 320px) {
+  main section .section-categories .click-to-edit {
+    height: 121px;
+    bottom: -130px;
+  }
 }
 main section .section-categories .click-to-edit a {
   font-family: palatino;
@@ -242,6 +357,12 @@ main .blogs .blog-post .blog-post-columned {
     gap: 0px;
   }
 }
+@media (max-width: 320px) {
+  main .blogs .blog-post .blog-post-columned img {
+    width: 280px;
+    height: 210px;
+  }
+}
 main .blogs .blog-post .blog-post-columned .heather {
   position: absolute;
   max-width: 261px;
@@ -282,6 +403,12 @@ main .blogs .blog-post #tomatoes {
   width: 669px;
   height: 501px;
 }
+@media (max-width: 320px) {
+  main .blogs .blog-post #tomatoes {
+    width: 280px;
+    height: 210px;
+  }
+}
 main .blogs .user-div {
   display: flex;
   flex-direction: column;
@@ -317,6 +444,11 @@ main .blogs .user-div .user-div-comment {
   margin-bottom: 24px;
   max-width: 608px;
   cursor: pointer;
+}
+main .blogs .user-div .user-div-underline {
+  max-width: 608px;
+  height: 1px;
+  background-color: #b5b5b5;
 }
 main .blogs .user-div .audience {
   display: flex;
@@ -391,6 +523,46 @@ main .blogs .read-more-main .read-more {
 main .blogs .read-more-main .read-more span {
   font-size: 15px;
 }
+main .blogs .heather-320px {
+  display: none;
+  max-width: 261px;
+  right: 0px;
+  background-color: #EAF2F5;
+  font-family: avenir;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  main .blogs .heather-320px {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  main .blogs .heather-320px {
+    display: block;
+    margin-inline: auto;
+    margin-top: 32px;
+  }
+}
+main .blogs .heather-320px .heather-text {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+main .blogs .heather-320px .heather-text a {
+  text-decoration: none;
+  color: #2F2E2E;
+}
+main .blogs .heather-320px .heather-text #heather-header {
+  font-size: 16px;
+}
+main .blogs .heather-320px .heather-text #heather-info {
+  margin-top: 24px;
+  font-size: 15px;
+  line-height: 25px;
+}
+main .blogs .heather-320px .heather-text #heather-email {
+  margin-top: 12px;
+}
 main .blogs .instagram-tag {
   display: flex;
   justify-content: center;
@@ -401,12 +573,27 @@ main .blogs .instagram-tag {
   font-family: palatinob;
   font-size: 28px;
 }
+@media (max-width: 320px) {
+  main .blogs .instagram-tag {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-top: 46px;
+    gap: 4px;
+  }
+}
 main .blogs .instagram-tag a {
   text-decoration: none;
   color: black;
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+}
+@media (max-width: 320px) {
+  main .blogs .instagram-tag a {
+    color: #2F2E2E;
+    font-size: 16px;
+  }
 }
 main .blogs .instagram-tag a:hover {
   color: rgb(255, 229, 206);
@@ -496,6 +683,11 @@ footer .input-container .input-email {
     max-width: 598px;
   }
 }
+@media (max-width: 320px) {
+  footer .input-container .input-email {
+    max-width: 284px;
+  }
+}
 footer .input-container .input-email label {
   color: #7A7A7A;
 }
@@ -529,6 +721,11 @@ footer .input-container .input-notification {
 @media (max-width: 768px) {
   footer .input-container .input-notification {
     max-width: 598px;
+  }
+}
+@media (max-width: 320px) {
+  footer .input-container .input-notification {
+    max-width: 284px;
   }
 }
 footer .input-container .input-notification label {
@@ -569,6 +766,11 @@ footer .input-container .input-submit {
     max-width: 598px;
   }
 }
+@media (max-width: 320px) {
+  footer .input-container .input-submit {
+    max-width: 284px;
+  }
+}
 footer .input-container .input-submit input {
   color: white;
   font-size: 15px;
@@ -603,6 +805,11 @@ footer .copyright-container {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+  }
+}
+@media (max-width: 320px) {
+  footer .copyright-container {
+    max-width: 284px;
   }
 }
 footer .copyright-container p a {
